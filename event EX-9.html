@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function K1(){
+          var num=Number(document.getElementById("total").value);
+          for(i=0;i<=num;i++)
+          {
+            document.getElementById("sel").innerHTML+="<option>"+i+"</option>";
+             }
+        }
+        function K2(){
+          var nu=Number( document.getElementById("sel").value);
+          for(i=0;i<=nu;i++)
+          {
+            document.getElementById("arr").innerHTML+="<option>"+i+"</option>";
+            }
+        }
+    </script>
+</head>
+<body>
+    ENTER VALUE:<input type="text"  id="total" onkeyup="K1()" >
+    
+    <select  id="sel" onclick="K2()" >
+    </select>
+   <select  id="arr"> </select>
+   
+</body>
+</html>

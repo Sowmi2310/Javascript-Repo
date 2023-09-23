@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btn(){
+            let num1=  parseInt(prompt("enter value1"));
+            let num2=  parseInt(prompt("enter value2"));
+            
+        
+        document.getElementById("add").innerHTML="ADDITION: "+(num1+num2);
+        document.getElementById("sub").innerHTML="SUBTRACTION: "+(num1-num2);
+        document.getElementById("mul").innerHTML="MULTIPLICATION: "+(num1*num2);
+        document.getElementById("div").innerHTML="DIVISION: "+(num1/num2);
+        document.getElementById("mod").innerHTML="MODULUS: "+(num1%num2);
+        }
+
+    </script>
+</head>
+<body>
+    <center>
+    <BUTTon onclick="btn()">CLICK</BUTTon>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    <p id="mod"></p>
+    </center>
+
+</body>
+</html>

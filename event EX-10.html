@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function num1(){
+          var num=Number(document.getElementById("total").value);
+          for(i=0;i<=num;i++)
+          {
+            document.getElementById("sel").innerHTML+="<option>"+i+"</option>";
+             }
+        }
+        function num2(){
+            var a=Number(document.getElementById("sel").value);
+            let b=prompt("enter username");
+            alert(b);
+            let c=prompt("enter password");
+            alert(c);
+        }
+    </script>
+</head>
+<body>
+    ENTER VALUE: <input type="text" id="total" onkeyup="num1()">
+    <!-- <button onclick="num1()">click</button> -->
+    <select name="" id="sel" onchange="num2()"></select>
+
+</body>
+</html>

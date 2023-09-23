@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ENTER THE NUMBER: <input type="text" id="txt">
+    <button onclick="btn()">ADD</button>
+    <select  id="slt">
+         <option value="">NUMBERS</option> 
+    </select>
+    <script>
+          function btn(){
+            var num=parseInt(document.getElementById("txt").value);
+            var sele=document.getElementById("slt");
+            var opt=document.createElement("option");
+             opt.textContent=num;
+             sele.appendChild(opt);
+            
+
+          }
+    </script>
+</body>
+</html>
