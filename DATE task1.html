@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        function CT(a){
+            var td=new Date();
+            var dd=td.getDate();
+            
+            var mm=td.getMonth()+1;
+            var yy=td.getFullYear();
+
+              if(dd<10) 
+                 dd='0'+dd;
+             if(mm<10) 
+                mm='0'+mm;
+             return(mm+a+dd+a+yy);
+
+
+        }
+         document.write(CT('-')+"<br>");
+         document.write(CT('*'));
+       
+    </script>
+</body>
+</html>
