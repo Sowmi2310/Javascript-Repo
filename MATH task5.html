@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function nat(n){
+            return (n>=0.0 && Math.floor(n)==n && n!=Infinity)
+        }
+        document.write(nat(-15)+"<br>");
+        document.write(nat(1)+"<br>");
+        document.write(nat(10.22)+"<br>");
+        document.write(nat(10/0)+"<br>");
+
+    </script>
+</body>
+</html>
