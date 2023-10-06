@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btn()">click</button>
+    <p  id="val"></p>
+    <script>
+        btn=()=>{
+             let a=parseInt(prompt("VALUE1:"));
+             let b=parseInt(prompt("VALUE2:"));
+            document.getElementById("val").innerHTML="ADD:"+(a+b)+"<br>"+"SUB:"+(a-b)+"<br>"+"MUL:"+(a*b)+"<br>"+"div:"+(a/b);
+    }
+        
+    </script>
+</body>
+</html>
