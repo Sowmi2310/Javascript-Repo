@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function validate(){
+         var a=document.getElementById("txt").value;
+         var check1="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,11}]$/";
+         
+         if((check1.value.match(a))){
+            alert("Username is Valid")
+         }
+         else{
+            alert("InValid UserName")
+         }
+    }
+   </script>
+
+
+
+    ENTER USERNAME: <input type="text"  id="txt"   placeholder="USERNAME">
+    <button  onclick="validate()">Check</button>
+</body>
+</html>
